@@ -8,5 +8,6 @@ namespace MainProject.Models.ViewModels
     public class ForumIndexViewModel
     {
         public IEnumerable<ForumListingViewModel> ForumList { get; set; }
+        public int NumberOfForums { get; set; }
     }
 }

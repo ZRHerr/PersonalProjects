@@ -46,26 +46,27 @@ namespace MainProject.Controllers
             //TODO User Rating
             _postService.Add(post).Wait(); //Block current thread until the task is complete.
 
-            return RedirectToAction("Index", "Post", new { id = post.Id });
+            return RedirectToAction("Index", "Forum", model.ForumId);
         }
 
-        private Post BuildPost(NewPostViewModel model, ApplicationUser user)
+        public Post BuildPost(NewPostViewModel model, ApplicationUser user)
         {
+            var now = DateTime.Now;
             var forum = _forumService.GetById(model.ForumId);
             return new Post
             {
                 Title = model.Title,
                 Content = model.Content,
-                Created = DateTime.Now,
-                User = user,
-                Forum = forum
+                Created = now,
+                Forum = forum,
+                User = user,              
             };
         }
 
         public IActionResult Index(int id)
         {
             var post = _postService.GetById(id);
-            var replies = BuildPostReplies(post.Replies);
+            var replies = BuildPostReplies(post).OrderBy(reply=>reply.Date);
             var model = new PostIndexViewModel
             {
                 Id = post.Id,
@@ -74,7 +75,7 @@ namespace MainProject.Controllers
                 AuthorName = post.User.UserName,
                 AuthorImageUrl = post.User.ProfileImageUrl,
                 AuthorRating = post.User.Rating,
-                Created = post.Created,
+                Date = post.Created,
                 PostContent = post.Content,
                 Replies = replies,
                 ForumId = post.Forum.Id,
@@ -87,16 +88,16 @@ namespace MainProject.Controllers
 
         //private methods
 
-        private IEnumerable<PostReplyViewModel> BuildPostReplies(IEnumerable<PostReply> replies)
+        private IEnumerable<PostReplyViewModel> BuildPostReplies(Post post)
         {
-            return replies.Select(reply => new PostReplyViewModel
+            return post.Replies.Select(reply => new PostReplyViewModel
             {
                 Id = reply.Id,
                 AuthorName = reply.User.UserName,
                 AuthorId = reply.User.Id,
                 AuthorImageUrl = reply.User.ProfileImageUrl,
                 AuthorRating = reply.User.Rating,
-                Created = reply.Created,
+                Date = reply.Created,
                 ReplyContent = reply.Content,
                 IsAuthorAdmin = IsAuthorAdmin(reply.User)
             });

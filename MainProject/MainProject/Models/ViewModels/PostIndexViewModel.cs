@@ -13,7 +13,7 @@ namespace MainProject.Models.ViewModels
         public string AuthorName { get; set; }
         public string AuthorImageUrl { get; set; }
         public int AuthorRating { get; set; }
-        public DateTime Created { get; set; }
+        public DateTime Date { get; set; }
         public string PostContent { get; set; }
         public bool IsAuthorAdmin { get; set; }
 
