@@ -4,7 +4,7 @@ Connect with a breif message [LinkedIn](https://www.linkedin.com/in/herrera-zr/)
 ***Ask me a question***
 ***Or ask to join in on a project!***
 
-I'm Currently using Visual Studio 2019 / VSCode / LearnIDE & IntelliJ [Microsoft IDE](https://visualstudio.microsoft.com/), is recommended if your new to development.
+I'm Currently using Visual Studio 2019 / VSCode / LearnIDE / IntelliJ & PyCharm [Microsoft IDE](https://visualstudio.microsoft.com/), is recommended if your new to development.
 
 # Actively Working on:
 
