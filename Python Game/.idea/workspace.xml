@@ -105,6 +105,7 @@
       <updated>1570567015819</updated>
       <workItem from="1570567017039" duration="3427000" />
       <workItem from="1570574578769" duration="1006000" />
+      <workItem from="1570657007053" duration="180000" />
     </task>
     <servers />
   </component>
@@ -137,6 +138,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Python_Game$Python_Game.coverage" NAME="Python Game Coverage Results" MODIFIED="1570570040603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python_Game$Game.coverage" NAME="Game Coverage Results" MODIFIED="1570570057745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Game$Game.coverage" NAME="Game Coverage Results" MODIFIED="1570657029655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

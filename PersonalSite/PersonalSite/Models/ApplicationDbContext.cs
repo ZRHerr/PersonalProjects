@@ -8,6 +8,8 @@ namespace PersonalSite.Models
 {
     public class ApplicationDbContext : DbContext
     {
+        //Decided not to use for now. 
+        //Commented out in startup
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
 
