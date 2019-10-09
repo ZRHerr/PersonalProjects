@@ -1,4 +1,8 @@
-﻿@await Html.PartialAsync("Header")
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+@await Html.PartialAsync("Header")
 @await Html.PartialAsync("About")
 @*@await Html.PartialAsync("Resume")*@
 @await Html.PartialAsync("Portfolio")

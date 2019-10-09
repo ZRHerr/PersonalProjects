@@ -1,4 +1,5 @@
-﻿<!-- Contact Section
+﻿@model PersonalSite.Models.Contact
+<!-- Contact Section
 ================================================== -->
 <section id="contact">
     <div class="row section-head">
@@ -14,26 +15,26 @@
     <div class="row">
         <div class="eight columns">
             <!-- form -->
-            <form action="" method="post" id="contactForm" name="contactForm">
+            <form method="post" id="contactForm" name="contactForm">
                 <fieldset>
                     <div>
-                        <label for="contactName">Name <span class="required">*</span></label>
-                        <input type="text" value="" size="35" id="contactName" name="contactName">
+                        <label asp-for="Name">Name <span class="required">*</span></label>
+                        <input asp-for="Name"  size="35" id="contactName">
                     </div>
                     <div>
-                        <label for="contactEmail">Email <span class="required">*</span></label>
-                        <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                        <label asp-for="Email">Email <span class="required">*</span></label>
+                        <input asp-for="Email"  size="35" id="contactEmail">
                     </div>
                     <div>
-                        <label for="contactSubject">Subject</label>
-                        <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+                        <label asp-for="Subject">Subject</label>
+                        <input asp-for="Subject"  size="35" id="contactSubject">
                     </div>
                     <div>
-                        <label for="contactMessage">Message <span class="required">*</span></label>
-                        <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                        <label asp-for="Message">Message <span class="required">*</span></label>
+                        <input  asp-for="Message" cols="50" rows="15" id="contactMessage"></input>
                     </div>
                     <div>
-                        <button class="submit">Submit</button>
+                        <input asp-action="Contact" type="submit"  value="Submit" class="submit" />
                         <span id="image-loader">
                             <img alt="" src="images/loader.gif">
                         </span>
