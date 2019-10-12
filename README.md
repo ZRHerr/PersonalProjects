@@ -8,15 +8,22 @@ I'm Currently using Visual Studio 2019 / VSCode / LearnIDE / IntelliJ & PyCharm 
 
 # Actively Working on:
 
-## MainProject (Find Mobile Mechanic's)
+## QuickFix (Find Mobile Mechanic's) - Overhauled MainProject
 ---
+*Complete overhaul of original MainProject.sln, offers much better coding practices and architecture.
 *Goal is to have a "Uber-like" webapp, for requesting mechanics to come do basic maintenance while you are at work/school
-*Currently building the baseline - using a forum in-app in order to discuss development approaches/bugs with anyone who wants to help build. <br />
-*Personal Project | Mobile Mechanic Web Application <br />
-*Using ASP.NET MVC pattern <br />
---- # Technologies & Concepts Used are:<br />
-C# OOP MVC Architectural Design Pattern ASP.NET Core 3.0 ASP.NET CORE Identity LINQ MSSQL Html &CSS JavaScript
+# Technologies & Concepts Used are:<br />
+* [ASP.NET Core 3.0](https://docs.microsoft.com/en-us/aspnet/core/), [Entity Framework Core 3.0](https://docs.microsoft.com/en-us/ef/core/)
+* [C#](https://docs.microsoft.com/en-us/dotnet/csharp), [Angular 8.2](https://angular.io/docs), [Typescript 3.5.3](https://www.typescriptlang.org/docs/home.html), [HTML](https://www.w3schools.com/html), [CSS](https://www.w3schools.com/css), [SASS](https://sass-lang.com/), [UIkit](https://getuikit.com/docs/introduction), [JWT](https://jwt.io/), [FluentValidation](https://fluentvalidation.net/), [Scrutor](https://github.com/khellang/Scrutor), [Serilog](https://serilog.net/), [Docker](https://docs.docker.com/), [Azure DevOps](https://dev.azure.com/) <br />
+* Layers - Web: API(ASP.NET Core) and Frontend (Angular) - Component, Model, Service, Guard, Error Handler, HTTPInterceptor, Routes, Extensions, Controllers   <br />
+Application: Flow Control - Application Service (No business rules or domain logic) <br />
+Domain: Business rules and domain logic - Entity <br />
+Model: Enums and models <br />
+Database: Data persistence - context, contextseed, repositories, entity configuration <br />
+Infrastructure: Technical features & functionality <br />
+CrossCutting: Generic features 
 <br />
+
 ## PersonalWebsite
 ---
 *Personal Website will contain information allow you to connect with me <br />
