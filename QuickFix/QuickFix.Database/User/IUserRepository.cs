@@ -13,7 +13,5 @@ namespace QuickFix.Database
 
         Task UpdateStatusAsync(UserEntity userEntity);
 
-        IEnumerable<UserEntity> GetAll();
-
     }
 }
