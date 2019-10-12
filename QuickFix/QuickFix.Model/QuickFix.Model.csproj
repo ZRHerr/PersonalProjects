@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="DotNetCore.Validation" Version="9.12.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QuickFix.CrossCutting\QuickFix.CrossCutting.csproj" />
+  </ItemGroup>
+</Project>
