@@ -36,7 +36,7 @@ namespace QuickFix.Database
                 y.HasIndex(x => x.Login).IsUnique();
             });
 
-            builder.HasMany(x => x.UsersLogs).WithOne(x => x.User).HasForeignKey(x => x.UserId);
+            builder.HasMany(x => x.UsersLogs).WithOne(x => x.User).HasForeignKey(x => x.UserId);                    
         }
     }
 }

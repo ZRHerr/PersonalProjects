@@ -1,6 +1,9 @@
 using DotNetCore.EntityFrameworkCore;
 using QuickFix.Domain;
 using QuickFix.Model;
+using QuickFix.Model.Models.ForumModel;
+using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace QuickFix.Database
@@ -24,6 +27,7 @@ namespace QuickFix.Database
         public Task UpdateStatusAsync(UserEntity userEntity)
         {
             return UpdatePartialAsync(userEntity.UserId, new { userEntity.Status });
-        }
+        }      
     }
 }
+
