@@ -8,6 +8,11 @@
   <ItemGroup>
     <None Remove="FrontEnd\src\app\models\employee\addemployee.ts" />
     <None Remove="FrontEnd\src\app\models\employee\updateemployee.ts" />
+    <None Remove="FrontEnd\src\app\models\post\category.model.ts" />
+    <None Remove="FrontEnd\src\app\models\post\post.ts" />
+    <None Remove="FrontEnd\src\app\models\post\postactivity.model.ts" />
+    <None Remove="FrontEnd\src\app\models\post\postreply.model.ts" />
+    <None Remove="FrontEnd\src\app\models\post\useractivity.model.ts" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="DotNetCore.AspNetCore" Version="9.12.0" />
@@ -20,5 +25,10 @@
   <ItemGroup>
     <TypeScriptCompile Include="FrontEnd\src\app\models\employee\addemployee.ts" />
     <TypeScriptCompile Include="FrontEnd\src\app\models\employee\updateemployee.ts" />
+    <TypeScriptCompile Include="FrontEnd\src\app\models\post\category.model.ts" />
+    <TypeScriptCompile Include="FrontEnd\src\app\models\post\post.ts" />
+    <TypeScriptCompile Include="FrontEnd\src\app\models\post\postactivity.model.ts" />
+    <TypeScriptCompile Include="FrontEnd\src\app\models\post\postreply.model.ts" />
+    <TypeScriptCompile Include="FrontEnd\src\app\models\post\useractivity.model.ts" />
   </ItemGroup>
 </Project>

@@ -1,6 +1,8 @@
 using DotNetCore.Repositories;
 using QuickFix.Domain;
 using QuickFix.Model;
+using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace QuickFix.Database
@@ -10,5 +12,8 @@ namespace QuickFix.Database
         Task<SignedInModel> SignInAsync(SignInModel signInModel);
 
         Task UpdateStatusAsync(UserEntity userEntity);
+
+        IEnumerable<UserEntity> GetAll();
+
     }
 }

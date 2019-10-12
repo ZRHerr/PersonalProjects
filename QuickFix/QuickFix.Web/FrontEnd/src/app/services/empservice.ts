@@ -5,7 +5,7 @@ import { UpdateEmployee } from "../models/employee/updateemployee";
 import { Employee } from "../models/employee/employee";
 
 @Injectable({ providedIn: "root" })
-export class AppUserService {
+export class EmpService {
     constructor(
         private readonly http: HttpClient) { }
 
