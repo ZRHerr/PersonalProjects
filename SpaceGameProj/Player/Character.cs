@@ -8,7 +8,7 @@ namespace SpaceGameProj
 {
     public class Character
     {
-
+        //Creation of Character
         public Character()
         {
             bool keepLooping = true;
@@ -122,6 +122,7 @@ namespace SpaceGameProj
         public Ship GetShip() => this.ship;
 
         // Displays information about user and currentShip
+        public List<string> DisplayItems { get; }
         public void ShowStatus()
         {
 
