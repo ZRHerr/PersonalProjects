@@ -101,6 +101,7 @@
         display: none;
     }
 }
+
 #site-cover {
     background-size: cover;
     background-image: url('https://source.unsplash.com/JuFcQxgCXwA');
@@ -140,6 +141,7 @@
     #site-meme #meme-fourth-line {
         font-size: 7.6vw;
     }
+
 .divider-style {
     margin-top: 70px;
     position: relative;
@@ -164,6 +166,7 @@
         top: 50%;
         z-index: 1;
     }
+
 .footer-dark {
     padding: 50px 0;
     color: #f0f9ff;
@@ -253,6 +256,7 @@
     font-size: 13px;
     margin-bottom: 0;
 }
+
 .spacer-slider {
     padding: 5px;
 }
@@ -665,4 +669,131 @@ img.dropdown-image {
             color: #e9ac09 !important;
         }
 
+.projects-horizontal {
+    color: #313437;
+    background-color: #fff;
+}
 
+    .projects-horizontal p {
+        color: #7d8285;
+    }
+
+    .projects-horizontal h2 {
+        font-weight: bold;
+        margin-bottom: 40px;
+        padding-top: 40px;
+        color: inherit;
+    }
+
+@media (max-width:767px) {
+    .projects-horizontal h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px;
+    }
+}
+
+.projects-horizontal .intronew {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 10px;
+}
+
+.projects-horizontal .projects {
+    padding-bottom: 40px;
+}
+
+.projects-horizontal .item {
+    padding-top: 60px;
+    min-height: 160px;
+}
+
+@media (max-width:767px) {
+    .projects-horizontal .item {
+        padding-top: 40px;
+        min-height: 160px;
+    }
+}
+
+.projects-horizontal .item .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: inherit;
+}
+
+@media (max-width:991px) {
+    .projects-horizontal .item .name {
+        margin-top: 22px;
+    }
+}
+
+.projects-horizontal .item .description {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.highlight-blue {
+    color: #fff;
+    background-color: #1e6add;
+    padding: 50px 0;
+}
+
+    .highlight-blue p {
+        color: #c4d5ef;
+        line-height: 1.5;
+    }
+
+    .highlight-blue h2 {
+        font-weight: normal;
+        margin-bottom: 25px;
+        line-height: 1.5;
+        padding-top: 0;
+        margin-top: 0;
+        color: inherit;
+    }
+
+    .highlight-blue .intronew {
+        font-size: 16px;
+        max-width: 500px;
+        margin: 0 auto 25px;
+    }
+
+    .highlight-blue .buttons {
+        text-align: center;
+    }
+
+        .highlight-blue .buttons .btn {
+            padding: 16px 32px;
+            margin: 6px;
+            border: none;
+            background: none;
+            box-shadow: none;
+            text-shadow: none;
+            opacity: 0.9;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 13px;
+            letter-spacing: 0.4px;
+            line-height: 1;
+        }
+
+            .highlight-blue .buttons .btn:hover {
+                opacity: 1;
+            }
+
+            .highlight-blue .buttons .btn:active {
+                transform: translateY(1px);
+            }
+
+        .highlight-blue .buttons .btn-primary, .highlight-blue .buttons .btn-primary:active {
+            border: 2px solid rgba(255,255,255,0.7);
+            border-radius: 6px;
+            color: #ebeff1;
+            box-shadow: none;
+            text-shadow: none;
+            padding: 14px 24px;
+            background: transparent;
+            transition: background-color 0.25s;
+        }

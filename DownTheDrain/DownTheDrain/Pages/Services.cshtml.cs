@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace DownTheDrain.Pages
 {
-    public class AboutModel : PageModel
+    public class ServicesModel : PageModel
     {
         public string Message { get; set; }
 
