@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace DownTheDrain.Pages
 {
-    public class PrivacyModel : PageModel
+    public class ReviewModel : PageModel
     {
         public void OnGet()
         {
