@@ -1,0 +1,8 @@
+﻿Q1 - Create a function to find the minimum and maximum numbers in a given array.
+
+Q2 - Swap two numbers without using Third / Temporary Variable.
+
+Q3 - Get the sum of a given integers digits ex( 456 = 15 )
+
+Q4 - Sort an array without using built in functions
+
